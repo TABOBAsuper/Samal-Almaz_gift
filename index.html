@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///D:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/index%206.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Самал и Алмаз — Свадьба</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Great+Vibes&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    background: #faf6f0;
+    color: #4a4038;
+    line-height: 1.6;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(212,175,140,0.15), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(212,175,140,0.15), transparent 40%),
+      linear-gradient(135deg, #fdfaf5, #f3e9dc);
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before, .hero::after {
+    content: '❧';
+    position: absolute;
+    font-size: 60px;
+    color: #d4af8c;
+    opacity: 0.35;
+  }
+  .hero::before { top: 30px; left: 30px; }
+  .hero::after { bottom: 30px; right: 30px; transform: rotate(180deg); }
+
+  .hero > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-circle {
+    width: min(380vw, 580px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #fdfaf5, #f3e9dc 55%, #e8d7bc 100%);
+    border: 1px solid #eaddc9;
+    box-shadow: 0 15px 45px rgba(150,120,80,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .pre-title {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #a98a5f;
+    margin-bottom: 20px;
+  }
+
+  .names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    color: #5c4a3a;
+    line-height: 1.1;
+  }
+
+  .amp {
+    font-size: 50px;
+    color: #d4af8c;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .date-line {
+    margin-top: 25px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #7a6a58;
+  }
+
+  .scroll-hint {
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #b39875;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 90px 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 640px;
+    height: 85%;
+    border-radius: 40px;
+    z-index: -1;
+    filter: blur(10px);
+  }
+
+  .countdown-section::before {
+    background: radial-gradient(ellipse at center, rgba(212,175,140,0.16), transparent 70%);
+  }
+
+  .details-section::before {
+    background: radial-gradient(ellipse at center, rgba(168,197,169,0.14), transparent 70%);
+  }
+
+  .rsvp-section::before {
+    background: radial-gradient(ellipse at center, rgba(232,180,184,0.18), transparent 70%);
+  }
+
+  .wishes-section::before {
+    background: radial-gradient(ellipse at center, rgba(212,175,140,0.14), transparent 70%);
+  }
+
+  .share-section::before {
+    background: radial-gradient(ellipse at center, rgba(169,138,95,0.16), transparent 70%);
+  }
+
+  .divider {
+    width: 60px;
+    height: 2px;
+    background: #d4af8c;
+    margin: 20px auto 30px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #5c4a3a;
+    letter-spacing: 1px;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .countdown div {
+    background: #fff;
+    border: 1px solid #eaddc9;
+    border-radius: 12px;
+    padding: 20px 25px;
+    min-width: 90px;
+    box-shadow: 0 6px 18px rgba(150,120,80,0.08);
+  }
+
+  .countdown .num {
+    font-size: 38px;
+    font-weight: 600;
+    color: #a98a5f;
+    display: block;
+  }
+
+  .countdown .label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8a7a68;
+  }
+
+  .details-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .detail-card {
+    max-width: 280px;
+  }
+
+  .detail-card .icon {
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .detail-card h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #5c4a3a;
+    margin-bottom: 8px;
+  }
+
+  .detail-card p {
+    text-align: center;
+    color: #7a6a58;
+    font-size: 19px;
+  }
+
+  .story-text {
+    font-size: 21px;
+    color: #6b5c4c;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .rsvp-section {
+    background: linear-gradient(135deg, #f3e9dc, #fdfaf5);
+  }
+
+  form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input, select, textarea {
+    font-family: inherit;
+    font-size: 19px;
+    padding: 14px 16px;
+    border: 1px solid #d9c7ab;
+    border-radius: 8px;
+    background: #fff;
+    color: #4a4038;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: #a98a5f;
+  }
+
+  textarea { resize: vertical; min-height: 80px; }
+
+  button.submit-btn {
+    font-family: inherit;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #a98a5f;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  button.submit-btn:hover { background: #8f7249; }
+
+  .voice-recorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .record-btn {
+    font-family: inherit;
+    font-size: 18px;
+    background: #fff;
+    color: #a98a5f;
+    border: 1px solid #d9c7ab;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .record-btn:hover { background: #f3e9dc; }
+
+  .record-btn.recording {
+    background: #c0554f;
+    color: #fff;
+    border-color: #c0554f;
+    animation: recordPulse 1.2s infinite;
+  }
+
+  .record-btn:disabled, textarea:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    background: #f3ece0;
+  }
+
+  .record-btn:disabled:hover { background: #f3ece0; }
+
+  @keyframes recordPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  .record-status {
+    font-size: 16px;
+    color: #7a6a58;
+  }
+
+  .audio-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .audio-player {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    border: 1px solid #d9c7ab;
+    border-radius: 30px;
+    padding: 10px 18px;
+  }
+
+  .audio-play-btn {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #a98a5f;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+  }
+
+  .audio-play-btn:hover { background: #8f7249; }
+
+  .audio-progress {
+    flex: 1;
+    height: 6px;
+    background: #eaddc9;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .audio-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #a98a5f;
+    border-radius: 3px;
+  }
+
+  .audio-time {
+    flex-shrink: 0;
+    font-size: 13px;
+    color: #8a7a68;
+    min-width: 36px;
+  }
+
+  .record-delete {
+    font-family: inherit;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #a05a5a;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .rsvp-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #5c8a5c;
+    display: none;
+  }
+
+  .already-submitted {
+    margin-top: 20px;
+    font-size: 19px;
+    color: #a98a5f;
+    display: none;
+  }
+
+  .wishes-section {
+    background: #fdfaf5;
+  }
+
+  .wishes-wall {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .wish-card {
+    background: #fff;
+    border: 1px solid #eaddc9;
+    border-radius: 12px;
+    padding: 18px 22px;
+    box-shadow: 0 4px 14px rgba(150,120,80,0.08);
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .wish-card .wish-name {
+    font-weight: 600;
+    font-size: 21px;
+    color: #5c4a3a;
+  }
+
+  .wish-card .wish-text {
+    font-size: 19px;
+    color: #6b5c4c;
+    margin-top: 4px;
+  }
+
+  .wishes-empty {
+    color: #a89880;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #ornamentLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .petal-piece {
+    position: absolute;
+    top: -40px;
+    animation-name: petalFall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .petal-piece svg {
+    display: block;
+    animation-name: petalSway;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes petalFall {
+    0% { transform: translateY(0); opacity: 0; }
+    8% { opacity: 0.85; }
+    92% { opacity: 0.85; }
+    100% { transform: translateY(110vh); opacity: 0; }
+  }
+
+  @keyframes petalSway {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    50% { transform: translateX(30px) rotate(180deg); }
+  }
+
+  footer {
+    text-align: center;
+    padding: 50px 20px;
+    color: #a98a5f;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .share-section {
+    background: #fdfaf5;
+  }
+
+  .share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+  }
+
+  .share-btn:hover { opacity: 0.9; }
+  .share-btn:active { transform: scale(0.97); }
+
+  .share-btn.whatsapp { background: #25D366; }
+  .share-btn.telegram { background: #229ED9; }
+  .share-btn.copy { background: #a98a5f; border: none; cursor: pointer; }
+
+  .copy-note {
+    display: block;
+    margin-top: 14px;
+    font-size: 16px;
+    color: #5c8a5c;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .copy-note.visible { opacity: 1; }
+
+  .qr-wrap {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .qr-wrap img, .qr-wrap canvas {
+    background: #fff;
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid #eaddc9;
+    box-shadow: 0 6px 18px rgba(150,120,80,0.08);
+  }
+
+  .qr-caption {
+    font-size: 17px;
+    color: #7a6a58;
+  }
+
+  @media (max-width: 500px) {
+    .names { font-size: 60px; }
+    .amp { font-size: 34px; }
+    .countdown { gap: 15px; }
+    .countdown div { padding: 14px 18px; min-width: 70px; }
+    .countdown .num { font-size: 28px; }
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<div id="ornamentLayer"><div class="petal-piece" style="left: 14.7541vw; animation-duration: 7.80341s; animation-delay: 4.90716s;"><svg width="15.505060231854163" height="15.505060231854163" viewBox="0 0 24 24" style="animation-duration: 2.46449s; animation-delay: 1.90037s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 28.5742vw; animation-duration: 7.05406s; animation-delay: 1.62243s;"><svg width="20.59781962035339" height="20.59781962035339" viewBox="0 0 24 24" style="animation-duration: 2.0872s; animation-delay: 1.19377s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 85.396vw; animation-duration: 8.67622s; animation-delay: 3.69002s;"><svg width="13.100470655807355" height="13.100470655807355" viewBox="0 0 24 24" style="animation-duration: 1.24946s; animation-delay: 0.0212902s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 74.3838vw; animation-duration: 4.53624s; animation-delay: 3.25718s;"><svg width="13.536101679823787" height="13.536101679823787" viewBox="0 0 24 24" style="animation-duration: 2.41115s; animation-delay: 0.960979s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 61.1716vw; animation-duration: 4.01786s; animation-delay: 3.99479s;"><svg width="24.47330975198288" height="24.47330975198288" viewBox="0 0 24 24" style="animation-duration: 2.0185s; animation-delay: 1.71222s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 50.4815vw; animation-duration: 7.22076s; animation-delay: 0.429466s;"><svg width="19.190629230580075" height="19.190629230580075" viewBox="0 0 24 24" style="animation-duration: 1.74275s; animation-delay: 1.00207s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 40.1079vw; animation-duration: 6.40929s; animation-delay: 4.4239s;"><svg width="22.51061975702661" height="22.51061975702661" viewBox="0 0 24 24" style="animation-duration: 2.43101s; animation-delay: 1.10809s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 74.0088vw; animation-duration: 8.38616s; animation-delay: 4.69131s;"><svg width="23.483911238439582" height="23.483911238439582" viewBox="0 0 24 24" style="animation-duration: 2.49937s; animation-delay: 0.144535s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 82.2558vw; animation-duration: 6.6774s; animation-delay: 2.15856s;"><svg width="21.17024336535483" height="21.17024336535483" viewBox="0 0 24 24" style="animation-duration: 1.7419s; animation-delay: 1.53057s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 78.9454vw; animation-duration: 5.64792s; animation-delay: 2.48761s;"><svg width="23.980282977763796" height="23.980282977763796" viewBox="0 0 24 24" style="animation-duration: 1.26415s; animation-delay: 1.2243s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 25.9464vw; animation-duration: 4.98694s; animation-delay: 1.94799s;"><svg width="17.607320187813038" height="17.607320187813038" viewBox="0 0 24 24" style="animation-duration: 1.98619s; animation-delay: 0.73598s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 18.525vw; animation-duration: 5.65637s; animation-delay: 1.60587s;"><svg width="18.88747741039231" height="18.88747741039231" viewBox="0 0 24 24" style="animation-duration: 2.47794s; animation-delay: 1.21104s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 5.05796vw; animation-duration: 4.89319s; animation-delay: 2.01657s;"><svg width="23.74876840890033" height="23.74876840890033" viewBox="0 0 24 24" style="animation-duration: 1.70687s; animation-delay: 0.674296s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 81.7684vw; animation-duration: 6.42633s; animation-delay: 1.37398s;"><svg width="21.572702942545753" height="21.572702942545753" viewBox="0 0 24 24" style="animation-duration: 1.58294s; animation-delay: 1.49915s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 66.2421vw; animation-duration: 8.15829s; animation-delay: 0.801948s;"><svg width="18.35803639199833" height="18.35803639199833" viewBox="0 0 24 24" style="animation-duration: 2.45973s; animation-delay: 0.755514s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 79.7153vw; animation-duration: 4.00752s; animation-delay: 2.15825s;"><svg width="18.815303200918176" height="18.815303200918176" viewBox="0 0 24 24" style="animation-duration: 1.97401s; animation-delay: 0.168163s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 4.85466vw; animation-duration: 7.66327s; animation-delay: 2.609s;"><svg width="15.948272937631405" height="15.948272937631405" viewBox="0 0 24 24" style="animation-duration: 2.09945s; animation-delay: 0.853523s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 26.0528vw; animation-duration: 4.33925s; animation-delay: 4.21164s;"><svg width="18.15161235939893" height="18.15161235939893" viewBox="0 0 24 24" style="animation-duration: 1.9913s; animation-delay: 1.87511s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 19.5631vw; animation-duration: 5.91265s; animation-delay: 1.63681s;"><svg width="23.622355075947453" height="23.622355075947453" viewBox="0 0 24 24" style="animation-duration: 1.93088s; animation-delay: 1.85819s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 96.4405vw; animation-duration: 6.89984s; animation-delay: 1.93224s;"><svg width="13.341345165641592" height="13.341345165641592" viewBox="0 0 24 24" style="animation-duration: 1.33612s; animation-delay: 0.844047s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 49.3535vw; animation-duration: 7.30317s; animation-delay: 5.36694s;"><svg width="14.190684773088135" height="14.190684773088135" viewBox="0 0 24 24" style="animation-duration: 1.27129s; animation-delay: 0.836498s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 67.432vw; animation-duration: 4.58447s; animation-delay: 2.12817s;"><svg width="16.160376971400193" height="16.160376971400193" viewBox="0 0 24 24" style="animation-duration: 1.48221s; animation-delay: 0.89554s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 28.2084vw; animation-duration: 7.81341s; animation-delay: 1.68417s;"><svg width="22.703810586063923" height="22.703810586063923" viewBox="0 0 24 24" style="animation-duration: 2.35187s; animation-delay: 1.40597s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 36.9585vw; animation-duration: 7.41906s; animation-delay: 3.42478s;"><svg width="14.187212240150235" height="14.187212240150235" viewBox="0 0 24 24" style="animation-duration: 1.94811s; animation-delay: 0.90781s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 57.4925vw; animation-duration: 7.40176s; animation-delay: 2.15069s;"><svg width="14.631829046557511" height="14.631829046557511" viewBox="0 0 24 24" style="animation-duration: 1.40527s; animation-delay: 1.19274s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 17.536vw; animation-duration: 5.33241s; animation-delay: 5.18234s;"><svg width="25.400301730254178" height="25.400301730254178" viewBox="0 0 24 24" style="animation-duration: 1.99633s; animation-delay: 1.39375s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 30.44vw; animation-duration: 7.35968s; animation-delay: 2.14058s;"><svg width="13.21125738978222" height="13.21125738978222" viewBox="0 0 24 24" style="animation-duration: 1.53861s; animation-delay: 1.24737s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 34.3945vw; animation-duration: 8.70038s; animation-delay: 3.41417s;"><svg width="25.70400051992452" height="25.70400051992452" viewBox="0 0 24 24" style="animation-duration: 1.99043s; animation-delay: 1.84139s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 90.2635vw; animation-duration: 6.70889s; animation-delay: 1.51521s;"><svg width="25.586734402888382" height="25.586734402888382" viewBox="0 0 24 24" style="animation-duration: 1.74581s; animation-delay: 0.920923s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 47.7389vw; animation-duration: 5.21387s; animation-delay: 1.87622s;"><svg width="16.339495401704713" height="16.339495401704713" viewBox="0 0 24 24" style="animation-duration: 2.29051s; animation-delay: 0.332848s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 95.8723vw; animation-duration: 4.4297s; animation-delay: 3.61882s;"><svg width="20.82404117505098" height="20.82404117505098" viewBox="0 0 24 24" style="animation-duration: 1.98071s; animation-delay: 0.862514s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 93.0847vw; animation-duration: 5.80638s; animation-delay: 2.7638s;"><svg width="15.74177359847714" height="15.74177359847714" viewBox="0 0 24 24" style="animation-duration: 2.3203s; animation-delay: 0.913456s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 62.9965vw; animation-duration: 5.23563s; animation-delay: 1.476s;"><svg width="15.742516967701022" height="15.742516967701022" viewBox="0 0 24 24" style="animation-duration: 1.42111s; animation-delay: 0.146717s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 66.0859vw; animation-duration: 7.99217s; animation-delay: 7.21405s;"><svg width="18.612508642491505" height="18.612508642491505" viewBox="0 0 24 24" style="animation-duration: 2.36454s; animation-delay: 2.16413s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 33.9159vw; animation-duration: 6.29395s; animation-delay: 3.5051s;"><svg width="14.91387955508809" height="14.91387955508809" viewBox="0 0 24 24" style="animation-duration: 1.27944s; animation-delay: 0.0662642s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 85.8376vw; animation-duration: 4.96874s; animation-delay: 4.54268s;"><svg width="16.312244266190078" height="16.312244266190078" viewBox="0 0 24 24" style="animation-duration: 2.03178s; animation-delay: 1.94389s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 83.8018vw; animation-duration: 5.91683s; animation-delay: 2.59189s;"><svg width="17.094758847121653" height="17.094758847121653" viewBox="0 0 24 24" style="animation-duration: 1.28007s; animation-delay: 1.1997s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 77.7618vw; animation-duration: 5.84415s; animation-delay: 5.546s;"><svg width="15.711536339915998" height="15.711536339915998" viewBox="0 0 24 24" style="animation-duration: 2.41675s; animation-delay: 0.890446s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 48.1588vw; animation-duration: 5.638s; animation-delay: 1.19397s;"><svg width="22.71624419627815" height="22.71624419627815" viewBox="0 0 24 24" style="animation-duration: 1.47642s; animation-delay: 0.0285255s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 75.747vw; animation-duration: 4.74515s; animation-delay: 0.354774s;"><svg width="23.58244180434478" height="23.58244180434478" viewBox="0 0 24 24" style="animation-duration: 2.43274s; animation-delay: 0.833636s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 16.5737vw; animation-duration: 6.83856s; animation-delay: 3.40339s;"><svg width="16.190669257655824" height="16.190669257655824" viewBox="0 0 24 24" style="animation-duration: 2.39598s; animation-delay: 0.400399s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e8b4bc" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 38.4027vw; animation-duration: 5.39946s; animation-delay: 2.38376s;"><svg width="25.243121444876387" height="25.243121444876387" viewBox="0 0 24 24" style="animation-duration: 1.93852s; animation-delay: 1.69198s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f2c6cd" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 57.8588vw; animation-duration: 5.00444s; animation-delay: 3.54295s;"><svg width="23.89321774962654" height="23.89321774962654" viewBox="0 0 24 24" style="animation-duration: 1.36926s; animation-delay: 0.342809s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#dba0ac" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 21.3657vw; animation-duration: 4.26853s; animation-delay: 0.536385s;"><svg width="17.2123579758587" height="17.2123579758587" viewBox="0 0 24 24" style="animation-duration: 1.45127s; animation-delay: 0.0673531s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#f0d4c8" opacity="0.85"></path>
+    </svg></div><div class="petal-piece" style="left: 42.3468vw; animation-duration: 4.68224s; animation-delay: 1.35469s;"><svg width="22.96289907101408" height="22.96289907101408" viewBox="0 0 24 24" style="animation-duration: 1.92502s; animation-delay: 0.0166775s;">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z" fill="#e3a5b0" opacity="0.85"></path>
+    </svg></div></div>
+
+<div class="hero">
+  <div class="hero-circle">
+    <div class="pre-title">Вместе со своими семьями</div>
+    <div class="names">
+      Самал
+      <span class="amp">&amp;</span>
+      Алмаз
+    </div>
+    <div class="date-line">приглашают вас на кыз узату — проводы невесты в дом жениха</div>
+  </div>
+  <div class="scroll-hint">↓ листайте вниз ↓</div>
+</div>
+
+<section class="countdown-section">
+  <h2>Наш особенный день</h2>
+  <div class="divider"></div>
+  <p class="story-text">Приглашаем вас разделить с нами кыз узату — казахскую традицию проводов невесты в новую семью. Это особенный день, полный тепла, благословений и семейных традиций, и мы будем рады видеть вас рядом с нами.</p>
+
+  <div class="countdown" id="countdown">
+    <div><span class="num" id="days">11</span><span class="label">Дней</span></div>
+    <div><span class="num" id="hours">09</span><span class="label">Часов</span></div>
+    <div><span class="num" id="minutes">35</span><span class="label">Минут</span></div>
+    <div><span class="num" id="seconds">05</span><span class="label">Секунд</span></div>
+  </div>
+</section>
+
+<section class="details-section">
+  <h2>Детали торжества</h2>
+  <div class="divider"></div>
+  <div class="details-grid">
+    <div class="detail-card">
+      <span class="icon">💍</span>
+      <h3>Кыз узату</h3>
+      <p>Воскресенье, 23 августа 2026<br></p>
+    </div>
+    <div class="detail-card">
+      <span class="icon">🥂</span>
+      <h3>Банкет</h3>
+      <p>В тот же день<br></p>
+    </div>
+    <div class="detail-card">
+      <span class="icon">📍</span>
+      <h3>Место проведения</h3>
+      <p>Ак Сарай, банкетный зал</p>
+    </div>
+  </div>
+</section>
+
+<section class="rsvp-section">
+  <h2>Подтверждение присутствия</h2>
+  <div class="divider"></div>
+  <p class="story-text">Просим ответить до 15 августа 2026 года</p>
+
+  <form id="rsvpForm" style="display: flex;">
+    <input type="text" id="guestName" placeholder="Ваше имя и фамилия" maxlength="40" required="">
+    <textarea id="message" placeholder="Пожелание молодожёнам (или запишите голосовое ниже)" maxlength="400"></textarea>
+
+    <div class="voice-recorder">
+      <button type="button" class="record-btn" id="recordBtn" style="display: inline-block;">🎤 Записать голосовое</button>
+      <span class="record-status" id="recordStatus"></span>
+      <div class="audio-preview" id="audioPreview" style="display: none;">
+        <div class="audio-player-slot" id="audioPlaybackSlot"></div>
+        <button type="button" class="record-delete" id="deleteRecording">✕ Удалить запись</button>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Отправить ответ</button>
+  </form>
+  <p class="rsvp-message" id="rsvpMessage">Спасибо! Ваш ответ получен. 💌</p>
+  <p class="already-submitted" id="alreadySubmitted" style="display: none;">Вы уже отправили ответ с этого устройства. Спасибо! 💌</p>
+</section>
+
+<section class="wishes-section">
+  <h2>Пожелания молодожёнам</h2>
+  <div class="divider"></div>
+  <p class="story-text">Все тёплые слова, которые вы оставили выше, сохраняются здесь навсегда</p>
+  <p class="story-text" id="wishesCount" style="margin-top:14px; font-weight:600; color:#a98a5f;"></p>
+  <div class="wishes-wall" id="wishesWall"><p class="wishes-empty">Пока нет пожеланий. Станьте первым!</p></div>
+</section>
+
+<section class="share-section">
+  <h2>Поделитесь с близкими</h2>
+  <div class="divider"></div>
+  <p class="story-text">Перешлите приглашение друзьям и родным, которые тоже хотят разделить этот день</p>
+
+  <div class="share-buttons">
+    <a class="share-btn whatsapp" id="shareWhatsapp" href="https://wa.me/?text=%D0%9F%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B0%D0%B5%D0%BC%20%D0%B2%D0%B0%D1%81%20%D0%BD%D0%B0%20%D0%BA%D1%8B%D0%B7%20%D1%83%D0%B7%D0%B0%D1%82%D1%83%20%D0%A1%D0%B0%D0%BC%D0%B0%D0%BB%20%D0%B8%20%D0%90%D0%BB%D0%BC%D0%B0%D0%B7!%2023%20%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82%D0%B0%202026%2C%20%D0%90%D0%BA%20%D0%A1%D0%B0%D1%80%D0%B0%D0%B9.%20file%3A%2F%2F%2FD%3A%2F%25D0%259D%25D0%25BE%25D0%25B2%25D0%25B0%25D1%258F%2520%25D0%25BF%25D0%25B0%25D0%25BF%25D0%25BA%25D0%25B0%2Findex%25206.html" target="_blank" rel="noopener">📱 WhatsApp</a>
+    <a class="share-btn telegram" id="shareTelegram" href="https://t.me/share/url?url=file%3A%2F%2F%2FD%3A%2F%25D0%259D%25D0%25BE%25D0%25B2%25D0%25B0%25D1%258F%2520%25D0%25BF%25D0%25B0%25D0%25BF%25D0%25BA%25D0%25B0%2Findex%25206.html&amp;text=%D0%9F%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B0%D0%B5%D0%BC%20%D0%B2%D0%B0%D1%81%20%D0%BD%D0%B0%20%D0%BA%D1%8B%D0%B7%20%D1%83%D0%B7%D0%B0%D1%82%D1%83%20%D0%A1%D0%B0%D0%BC%D0%B0%D0%BB%20%D0%B8%20%D0%90%D0%BB%D0%BC%D0%B0%D0%B7!%2023%20%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82%D0%B0%202026%2C%20%D0%90%D0%BA%20%D0%A1%D0%B0%D1%80%D0%B0%D0%B9." target="_blank" rel="noopener">✈️ Telegram</a>
+    <button class="share-btn copy" id="copyLinkBtn">🔗 Скопировать ссылку</button>
+  </div>
+  <span class="copy-note" id="copyNote">Ссылка скопирована!</span>
+
+  <div class="qr-wrap">
+    <div id="qrCode"></div>
+    <span class="qr-caption">Отсканируйте, чтобы открыть приглашение</span>
+  </div>
+</section>
+
+<footer>Самал &amp; Алмаз</footer>
+
+<div id="adminPanel" style="display:none; text-align:center; padding-bottom:40px;">
+  <button id="resetWishesBtn" style="font-family:inherit; font-size:16px; background:#fff; color:#a05a5a; border:1px solid #d9a0a0; padding:12px 20px; border-radius:8px; cursor:pointer;">🗑 Сбросить все пожелания</button>
+</div>
+
+<script>
+  // Set your wedding date/time here (YYYY-MM-DDTHH:MM:SS)
+  const weddingDate = new Date('2026-08-23T13:00:00').getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance < 0) {
+      document.getElementById('countdown').innerHTML = '<p style="font-size:24px;color:#a98a5f;">Этот день настал! 🎉</p>';
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = String(days).padStart(2, '0');
+    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  const SUBMITTED_KEY = 'wedding-rsvp-submitted-samal-almaz';
+  const EPOCH_KEY = 'wedding-rsvp-epoch-samal-almaz';
+  const ADMIN_PASSCODE = 'samal2026'; // смените на свой код
+
+  function hasAlreadySubmitted() {
+    try {
+      return localStorage.getItem(SUBMITTED_KEY) === 'true';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markAsSubmitted() {
+    try {
+      localStorage.setItem(SUBMITTED_KEY, 'true');
+    } catch (e) {
+      console.warn('Could not save submission flag:', e);
+    }
+  }
+
+  function showFormState() {
+    if (hasAlreadySubmitted()) {
+      document.getElementById('rsvpForm').style.display = 'none';
+      document.getElementById('alreadySubmitted').style.display = 'block';
+    } else {
+      document.getElementById('rsvpForm').style.display = 'flex';
+      document.getElementById('alreadySubmitted').style.display = 'none';
+    }
+  }
+
+  // Сверяем "эпоху" сброса с сервером: если админ нажал сброс,
+  // эпоха увеличится и у всех гостей форма разблокируется заново.
+  function syncEpochAndShowForm() {
+    if (!firebaseReady) {
+      showFormState();
+      return;
+    }
+    db.collection('meta').doc('state').get().then(doc => {
+      const serverEpoch = doc.exists && doc.data().epoch ? doc.data().epoch : 1;
+      const localEpoch = parseInt(localStorage.getItem(EPOCH_KEY) || '0', 10);
+
+      if (serverEpoch !== localEpoch) {
+        localStorage.removeItem(SUBMITTED_KEY);
+        localStorage.setItem(EPOCH_KEY, String(serverEpoch));
+      }
+      showFormState();
+    }).catch(err => {
+      console.warn('Epoch check failed:', err);
+      showFormState();
+    });
+  }
+
+  // ===== Админ: сброс всех пожеланий =====
+  if (window.location.search.includes('admin=1')) {
+    document.getElementById('adminPanel').style.display = 'block';
+  }
+
+  document.getElementById('resetWishesBtn').addEventListener('click', function() {
+    const code = prompt('Введите код администратора:');
+    if (code !== ADMIN_PASSCODE) {
+      if (code !== null) alert('Неверный код.');
+      return;
+    }
+    if (!confirm('Точно удалить все пожелания и разрешить всем гостям написать заново?')) {
+      return;
+    }
+
+    if (firebaseReady) {
+      db.collection('wishes').get().then(snapshot => {
+        const batch = db.batch();
+        snapshot.forEach(doc => batch.delete(doc.ref));
+        return batch.commit();
+      }).then(() => {
+        return db.collection('meta').doc('state').set({
+          epoch: firebase.firestore.FieldValue.increment(1)
+        }, { merge: true });
+      }).then(() => {
+        localStorage.removeItem(SUBMITTED_KEY);
+        showFormState();
+        alert('Готово! Все пожелания удалены, гости смогут написать заново.');
+      }).catch(err => {
+        console.error('Reset error:', err);
+        alert('Ошибка при сбросе. Попробуйте ещё раз.');
+      });
+    } else {
+      localStorage.removeItem(WISHES_KEY);
+      localStorage.removeItem(SUBMITTED_KEY);
+      renderWishes([]);
+      showFormState();
+      alert('Готово! Пожелания на этом устройстве сброшены (без Firebase сброс работает только локально).');
+    }
+  });
+
+  // ===== Запись голосового сообщения =====
+  const recordBtn = document.getElementById('recordBtn');
+  const recordStatus = document.getElementById('recordStatus');
+  const audioPreview = document.getElementById('audioPreview');
+  const audioPlaybackSlot = document.getElementById('audioPlaybackSlot');
+  const deleteRecordingBtn = document.getElementById('deleteRecording');
+  const messageTextarea = document.getElementById('message');
+
+  const MAX_RECORD_SECONDS = 60;
+  let mediaRecorder = null;
+  let audioChunks = [];
+  let recordedAudioBase64 = null;
+  let recordTimerInterval = null;
+  let recordSeconds = 0;
+
+  // Строит плеер в стиле сайта (используется и в превью формы, и в карточках пожеланий)
+  function createAudioPlayer(src) {
+    const wrap = document.createElement('div');
+    wrap.className = 'audio-player';
+
+    const audio = document.createElement('audio');
+    audio.src = src;
+    audio.preload = 'metadata';
+    audio.style.display = 'none';
+
+    const playBtn = document.createElement('button');
+    playBtn.type = 'button';
+    playBtn.className = 'audio-play-btn';
+    playBtn.textContent = '▶';
+
+    const progress = document.createElement('div');
+    progress.className = 'audio-progress';
+    const fill = document.createElement('div');
+    fill.className = 'audio-progress-fill';
+    progress.appendChild(fill);
+
+    const time = document.createElement('span');
+    time.className = 'audio-time';
+    time.textContent = '0:00';
+
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = '⏸';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶';
+      }
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      if (audio.duration) {
+        fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+        const m = Math.floor(audio.currentTime / 60);
+        const s = String(Math.floor(audio.currentTime % 60)).padStart(2, '0');
+        time.textContent = `${m}:${s}`;
+      }
+    });
+
+    audio.addEventListener('ended', () => {
+      playBtn.textContent = '▶';
+      fill.style.width = '0%';
+      time.textContent = '0:00';
+    });
+
+    progress.addEventListener('click', (e) => {
+      const rect = progress.getBoundingClientRect();
+      const ratio = (e.clientX - rect.left) / rect.width;
+      if (audio.duration) audio.currentTime = ratio * audio.duration;
+    });
+
+    wrap.appendChild(playBtn);
+    wrap.appendChild(progress);
+    wrap.appendChild(time);
+    wrap.appendChild(audio);
+    return wrap;
+  }
+
+  function setTextLocked(locked) {
+    messageTextarea.disabled = locked;
+    messageTextarea.placeholder = locked
+      ? 'Удалите голосовое, чтобы написать текст'
+      : 'Пожелание молодожёнам (или запишите голосовое ниже)';
+  }
+
+  function setVoiceLocked(locked) {
+    recordBtn.disabled = locked;
+    recordStatus.textContent = locked ? 'Очистите текст, чтобы записать голосовое' : '';
+  }
+
+  messageTextarea.addEventListener('input', () => {
+    setVoiceLocked(messageTextarea.value.trim().length > 0);
+  });
+
+  function resetRecording() {
+    recordedAudioBase64 = null;
+    audioPlaybackSlot.innerHTML = '';
+    audioPreview.style.display = 'none';
+    recordBtn.style.display = 'inline-block';
+    recordStatus.textContent = '';
+    setTextLocked(false);
+  }
+
+  function blobToBase64(blob) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  async function startRecording() {
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      recordStatus.textContent = 'Запись голоса не поддерживается в этом браузере.';
+      return;
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      audioChunks = [];
+      mediaRecorder = new MediaRecorder(stream);
+
+      mediaRecorder.addEventListener('dataavailable', e => {
+        if (e.data.size > 0) audioChunks.push(e.data);
+      });
+
+      mediaRecorder.addEventListener('stop', async () => {
+        stream.getTracks().forEach(track => track.stop());
+        clearInterval(recordTimerInterval);
+
+        const blob = new Blob(audioChunks, { type: 'audio/webm' });
+        recordedAudioBase64 = await blobToBase64(blob);
+
+        audioPlaybackSlot.innerHTML = '';
+        audioPlaybackSlot.appendChild(createAudioPlayer(URL.createObjectURL(blob)));
+        audioPreview.style.display = 'flex';
+        recordBtn.style.display = 'none';
+        recordStatus.textContent = '';
+
+        messageTextarea.value = '';
+        setTextLocked(true);
+      });
+
+      mediaRecorder.start();
+      recordSeconds = 0;
+      recordBtn.classList.add('recording');
+      recordBtn.textContent = '⏹ Остановить запись';
+      recordStatus.textContent = '0:00';
+
+      recordTimerInterval = setInterval(() => {
+        recordSeconds++;
+        const m = Math.floor(recordSeconds / 60);
+        const s = String(recordSeconds % 60).padStart(2, '0');
+        recordStatus.textContent = `${m}:${s}`;
+        if (recordSeconds >= MAX_RECORD_SECONDS) {
+          stopRecording();
+        }
+      }, 1000);
+    } catch (err) {
+      console.warn('Microphone access error:', err);
+      let msg = 'Не удалось получить доступ к микрофону.';
+      if (err.name === 'NotFoundError' || err.name === 'DevicesNotFoundError') {
+        msg = 'Микрофон не найден на этом устройстве.';
+      } else if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
+        msg = 'Доступ к микрофону запрещён. Разрешите его в настройках браузера.';
+      } else if (err.name === 'NotReadableError' || err.name === 'TrackStartError') {
+        msg = 'Микрофон занят другим приложением.';
+      }
+      recordStatus.textContent = msg;
+    }
+  }
+
+  function stopRecording() {
+    if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+      mediaRecorder.stop();
+    }
+    recordBtn.classList.remove('recording');
+    recordBtn.textContent = '🎤 Записать голосовое';
+  }
+
+  recordBtn.addEventListener('click', function() {
+    if (mediaRecorder && mediaRecorder.state === 'recording') {
+      stopRecording();
+    } else {
+      startRecording();
+    }
+  });
+
+  deleteRecordingBtn.addEventListener('click', resetRecording);
+
+  document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (hasAlreadySubmitted()) {
+      document.getElementById('rsvpForm').style.display = 'none';
+      document.getElementById('alreadySubmitted').style.display = 'block';
+      return;
+    }
+
+    const name = document.getElementById('guestName').value.trim();
+    const text = document.getElementById('message').value.trim();
+
+    if (!text && !recordedAudioBase64) {
+      recordStatus.textContent = 'Напишите пожелание или запишите голосовое сообщение.';
+      return;
+    }
+
+    document.getElementById('rsvpForm').style.display = 'none';
+    document.getElementById('rsvpMessage').style.display = 'block';
+    markAsSubmitted();
+
+    saveWish(name || 'Гость', text, recordedAudioBase64);
+  });
+
+  // ===== ОБЩАЯ СТЕНА ПОЖЕЛАНИЙ (Firebase Firestore) =====
+  const firebaseConfig = {
+    apiKey: "AIzaSyDjGD-HQraQ-pa8m9M-bwfo57vB_5oFq-k",
+    authDomain: "samal-almaz-wedding.firebaseapp.com",
+    projectId: "samal-almaz-wedding",
+    storageBucket: "samal-almaz-wedding.firebasestorage.app",
+    messagingSenderId: "280875581995",
+    appId: "1:280875581995:web:ba3d73d2a71c851277606e"
+  };
+
+  let db = null;
+  let firebaseReady = false;
+
+  try {
+    if (firebaseConfig.apiKey !== "ВСТАВЬ_СЮДА" && firebaseConfig.apiKey) {
+      firebase.initializeApp(firebaseConfig);
+      db = firebase.firestore();
+      firebaseReady = true;
+    }
+  } catch (e) {
+    console.warn('Firebase не настроен, используется локальное хранилище:', e);
+  }
+
+  const WISHES_KEY = 'wedding-wishes-samal-almaz';
+
+  syncEpochAndShowForm();
+
+  function loadWishesLocal() {
+    try {
+      const saved = localStorage.getItem(WISHES_KEY);
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveWishLocal(name, text, audio) {
+    const wishes = loadWishesLocal();
+    wishes.push({ name: name, text: text, audio: audio || null });
+    try {
+      localStorage.setItem(WISHES_KEY, JSON.stringify(wishes));
+    } catch (e) {
+      console.warn('Could not save wish (audio may be too large for localStorage):', e);
+    }
+    renderWishes(wishes);
+  }
+
+  function saveWish(name, text, audio) {
+    if (firebaseReady) {
+      db.collection('wishes').add({
+        name: name,
+        text: text,
+        audio: audio || null,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      }).catch(err => {
+        console.warn('Firebase save error, falling back to local:', err);
+        saveWishLocal(name, text, audio);
+      });
+    } else {
+      saveWishLocal(name, text, audio);
+    }
+  }
+
+  function renderWishes(wishes) {
+    const wall = document.getElementById('wishesWall');
+    wall.innerHTML = '';
+
+    const countEl = document.getElementById('wishesCount');
+    if (wishes.length === 0) {
+      countEl.textContent = '';
+    } else {
+      const word = wishes.length === 1 ? 'пожелание' :
+        (wishes.length >= 2 && wishes.length <= 4) ? 'пожелания' : 'пожеланий';
+      countEl.textContent = `${wishes.length} ${word} от гостей`;
+    }
+
+    if (wishes.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'wishes-empty';
+      empty.textContent = 'Пока нет пожеланий. Станьте первым!';
+      wall.appendChild(empty);
+      return;
+    }
+
+    wishes.forEach(wish => {
+      const card = document.createElement('div');
+      card.className = 'wish-card';
+
+      const name = document.createElement('div');
+      name.className = 'wish-name';
+      name.textContent = wish.name;
+
+      card.appendChild(name);
+
+      if (wish.text) {
+        const text = document.createElement('div');
+        text.className = 'wish-text';
+        text.textContent = wish.text;
+        card.appendChild(text);
+      }
+
+      if (wish.audio) {
+        card.appendChild(createAudioPlayer(wish.audio));
+      }
+
+      wall.appendChild(card);
+    });
+  }
+
+  if (firebaseReady) {
+    // Живое обновление: все гости видят пожелания друг друга без перезагрузки страницы
+    db.collection('wishes').orderBy('createdAt', 'asc').onSnapshot(snapshot => {
+      const wishes = [];
+      snapshot.forEach(doc => wishes.push(doc.data()));
+      renderWishes(wishes);
+    }, err => {
+      console.warn('Firebase listen error, falling back to local:', err);
+      renderWishes(loadWishesLocal());
+    });
+  } else {
+    renderWishes(loadWishesLocal());
+  }
+
+
+  // Falling flower petals
+  const ornamentLayer = document.getElementById('ornamentLayer');
+  const petalColors = ['#e8b4bc', '#f2c6cd', '#dba0ac', '#f0d4c8', '#e3a5b0'];
+  const PETAL_COUNT = 45;
+
+  function makePetalSvg(color, size) {
+    return `<svg width="${size}" height="${size}" viewBox="0 0 24 24">
+      <path d="M12 2C7 6 4 10 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-4-3-8-8-12z"
+        fill="${color}" opacity="0.85"/>
+    </svg>`;
+  }
+
+  for (let i = 0; i < PETAL_COUNT; i++) {
+    const wrap = document.createElement('div');
+    wrap.className = 'petal-piece';
+    wrap.style.left = Math.random() * 100 + 'vw';
+
+    const fallDuration = 4 + Math.random() * 5;
+    wrap.style.animationDuration = fallDuration + 's';
+    wrap.style.animationDelay = (Math.random() * fallDuration) + 's';
+
+    const size = 12 + Math.random() * 14;
+    const color = petalColors[i % petalColors.length];
+    wrap.innerHTML = makePetalSvg(color, size);
+
+    const svgEl = wrap.querySelector('svg');
+    const swayDuration = 1.2 + Math.random() * 1.3;
+    svgEl.style.animationDuration = swayDuration + 's';
+    svgEl.style.animationDelay = (Math.random() * swayDuration) + 's';
+
+    ornamentLayer.appendChild(wrap);
+  }
+
+  // Share buttons
+  const pageUrl = window.location.href;
+  const shareText = 'Приглашаем вас на кыз узату Самал и Алмаз! 23 августа 2026, Ак Сарай.';
+
+  document.getElementById('shareWhatsapp').href =
+    'https://wa.me/?text=' + encodeURIComponent(shareText + ' ' + pageUrl);
+  document.getElementById('shareTelegram').href =
+    'https://t.me/share/url?url=' + encodeURIComponent(pageUrl) + '&text=' + encodeURIComponent(shareText);
+
+  document.getElementById('copyLinkBtn').addEventListener('click', function() {
+    const note = document.getElementById('copyNote');
+    const finish = () => {
+      note.classList.add('visible');
+      setTimeout(() => note.classList.remove('visible'), 2000);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(pageUrl).then(finish).catch(finish);
+    } else {
+      finish();
+    }
+  });
+
+  // QR code
+  if (window.QRCode) {
+    new QRCode(document.getElementById('qrCode'), {
+      text: pageUrl,
+      width: 160,
+      height: 160,
+      colorDark: '#5c4a3a',
+      colorLight: '#ffffff'
+    });
+  }
+</script>
+
+
+
+</body></html>
